@@ -13,7 +13,7 @@ export interface CreateNoteProps {
 }
 
 const START_URL = "https://notehub-public.goit.study/api";
-const TOKEN = .env.NEXT_PUBLIC_NOTEHUB_TOKEN;
+const TOKEN = process.env.NEXT_PUBLIC_NOTEHUB_TOKEN;
 
 const noteHubApi = axios.create({
   baseURL: START_URL,
